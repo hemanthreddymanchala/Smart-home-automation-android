@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".SplashActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"
+        app:lottie_speed="0.7"
+        app:lottie_url="https://assets4.lottiefiles.com/packages/lf20_ggwq3ysg.json" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tt"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:letterSpacing="0.2"
+        android:text="SHAS"
+        android:textColor="@color/text"
+        android:textSize="38dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tt"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="40dp"
+        android:text="Smart home automation system"
+        android:textColor="@color/yellow"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
